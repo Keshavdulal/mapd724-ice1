@@ -1,7 +1,12 @@
 import SpriteKit
 import GameplayKit
 
+// global static class
+// nothing to do with my gamescene or GameViewController
 class CollisionManager {
+    
+    // important reference -> to have updates from GameViewController
+    public static var gameViewController: GameViewController?
      
     // utility function
     public static func SquaredDistance(point1: CGPoint, point2: CGPoint) -> CGFloat {
@@ -28,15 +33,27 @@ class CollisionManager {
             if(!object2.isColliding!){
                 switch(object2.name){
                 case "island":
-                    print("Collided with island")
+                    // print("Collided with island")
+                    
+                    // play sound
                     scene.run(SKAction.playSoundFileNamed("yay", waitForCompletion: false))
+                    
+                    // increase score
+                    ScoreManager.Score += 100
+                    gameViewController?.updateScoreLabel()
                     break
                 
                 case "cloud":
-                    print("Collided with cloud")
-                    scene.run(SKAction.playSoundFileNamed("thunder", waitForCompletion: false))
-                    break
+                    //print("Collided with cloud")
                     
+                    // play sound
+                    scene.run(SKAction.playSoundFileNamed("thunder", waitForCompletion: false))
+                    
+                    // take lives
+                    ScoreManager.Lives -= 1
+                    gameViewController?.updateLivesLabel()
+                    break
+                     
                 default:
                     break
                 }
