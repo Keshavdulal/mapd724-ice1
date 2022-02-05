@@ -5,6 +5,8 @@
 //  Created by Keshav Dulal on 23/01/2022.
 //
 
+// protocol is a contract
+// very similar to interface
 protocol GameProtocol{
     
     // prevent an objet from leaving the screen or detect that it has done so

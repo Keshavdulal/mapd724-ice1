@@ -17,6 +17,8 @@
 		2C067515279DBDDB0027BC55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C067513279DBDDB0027BC55 /* LaunchScreen.storyboard */; };
 		2C067539279DBE720027BC55 /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C067538279DBE720027BC55 /* GameObject.swift */; };
 		2C06753B279DBED10027BC55 /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C06753A279DBED10027BC55 /* GameProtocol.swift */; };
+		2C3A5B5B27AE873E00E1FC4B /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3A5B5A27AE873E00E1FC4B /* Island.swift */; };
+		2C3A5B5D27AE8ECF00E1FC4B /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3A5B5C27AE8ECF00E1FC4B /* Cloud.swift */; };
 		2C9F9743279E603E007F0A5A /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9F9742279E603E007F0A5A /* Plane.swift */; };
 		2C9F9745279E614E007F0A5A /* Ocean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9F9744279E614E007F0A5A /* Ocean.swift */; };
 /* End PBXBuildFile section */
@@ -39,7 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2C067501279DBDD90027BC55 /* MAPD724-W2022-ICE1-Keshav-Dulal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAPD724-W2022-ICE1-Keshav-Dulal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C067501279DBDD90027BC55 /* MAPD724-W2022-ICE2-Keshav-Dulal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAPD724-W2022-ICE2-Keshav-Dulal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C067504279DBDD90027BC55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C067506279DBDD90027BC55 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		2C067508279DBDD90027BC55 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -48,10 +50,12 @@
 		2C06750F279DBDD90027BC55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C067511279DBDDB0027BC55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C067514279DBDDB0027BC55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2C06751A279DBDDB0027BC55 /* MAPD724-W2022-ICE1-Keshav-DulalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MAPD724-W2022-ICE1-Keshav-DulalTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C067524279DBDDB0027BC55 /* MAPD724-W2022-ICE1-Keshav-DulalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MAPD724-W2022-ICE1-Keshav-DulalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C06751A279DBDDB0027BC55 /* MAPD724-W2022-ICE2-Keshav-DulalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MAPD724-W2022-ICE2-Keshav-DulalTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C067524279DBDDB0027BC55 /* MAPD724-W2022-ICE2-Keshav-DulalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MAPD724-W2022-ICE2-Keshav-DulalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C067538279DBE720027BC55 /* GameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
 		2C06753A279DBED10027BC55 /* GameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
+		2C3A5B5A27AE873E00E1FC4B /* Island.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
+		2C3A5B5C27AE8ECF00E1FC4B /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
 		2C9F96C9279E59B3007F0A5A /* bullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullet.png; sourceTree = "<group>"; };
 		2C9F96CA279E59B3007F0A5A /* plane3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plane3.png; sourceTree = "<group>"; };
 		2C9F96CB279E59B3007F0A5A /* plane2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plane2.png; sourceTree = "<group>"; };
@@ -139,7 +143,7 @@
 		2C0674F8279DBDD80027BC55 = {
 			isa = PBXGroup;
 			children = (
-				2C067503279DBDD90027BC55 /* MAPD724-W2022-ICE1-Keshav-Dulal */,
+				2C067503279DBDD90027BC55 /* MAPD724-W2022-ICE2-Keshav-Dulal */,
 				2C067502279DBDD90027BC55 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -147,14 +151,14 @@
 		2C067502279DBDD90027BC55 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2C067501279DBDD90027BC55 /* MAPD724-W2022-ICE1-Keshav-Dulal.app */,
-				2C06751A279DBDDB0027BC55 /* MAPD724-W2022-ICE1-Keshav-DulalTests.xctest */,
-				2C067524279DBDDB0027BC55 /* MAPD724-W2022-ICE1-Keshav-DulalUITests.xctest */,
+				2C067501279DBDD90027BC55 /* MAPD724-W2022-ICE2-Keshav-Dulal.app */,
+				2C06751A279DBDDB0027BC55 /* MAPD724-W2022-ICE2-Keshav-DulalTests.xctest */,
+				2C067524279DBDDB0027BC55 /* MAPD724-W2022-ICE2-Keshav-DulalUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2C067503279DBDD90027BC55 /* MAPD724-W2022-ICE1-Keshav-Dulal */ = {
+		2C067503279DBDD90027BC55 /* MAPD724-W2022-ICE2-Keshav-Dulal */ = {
 			isa = PBXGroup;
 			children = (
 				2C9F973F279E5DCD007F0A5A /* GameObjects */,
@@ -169,7 +173,7 @@
 				2C067511279DBDDB0027BC55 /* Assets.xcassets */,
 				2C067513279DBDDB0027BC55 /* LaunchScreen.storyboard */,
 			);
-			path = "MAPD724-W2022-ICE1-Keshav-Dulal";
+			path = "MAPD724-W2022-ICE2-Keshav-Dulal";
 			sourceTree = "<group>";
 		};
 		2C067537279DBE260027BC55 /* Core */ = {
@@ -280,6 +284,8 @@
 			children = (
 				2C9F9744279E614E007F0A5A /* Ocean.swift */,
 				2C9F9742279E603E007F0A5A /* Plane.swift */,
+				2C3A5B5A27AE873E00E1FC4B /* Island.swift */,
+				2C3A5B5C27AE8ECF00E1FC4B /* Cloud.swift */,
 			);
 			path = GameObjects;
 			sourceTree = "<group>";
@@ -287,9 +293,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2C067500279DBDD90027BC55 /* MAPD724-W2022-ICE1-Keshav-Dulal */ = {
+		2C067500279DBDD90027BC55 /* MAPD724-W2022-ICE2-Keshav-Dulal */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C06752E279DBDDB0027BC55 /* Build configuration list for PBXNativeTarget "MAPD724-W2022-ICE1-Keshav-Dulal" */;
+			buildConfigurationList = 2C06752E279DBDDB0027BC55 /* Build configuration list for PBXNativeTarget "MAPD724-W2022-ICE2-Keshav-Dulal" */;
 			buildPhases = (
 				2C0674FD279DBDD90027BC55 /* Sources */,
 				2C0674FE279DBDD90027BC55 /* Frameworks */,
@@ -299,14 +305,14 @@
 			);
 			dependencies = (
 			);
-			name = "MAPD724-W2022-ICE1-Keshav-Dulal";
+			name = "MAPD724-W2022-ICE2-Keshav-Dulal";
 			productName = "MAPD724-W2022-ICE1-Keshav-Dulal";
-			productReference = 2C067501279DBDD90027BC55 /* MAPD724-W2022-ICE1-Keshav-Dulal.app */;
+			productReference = 2C067501279DBDD90027BC55 /* MAPD724-W2022-ICE2-Keshav-Dulal.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2C067519279DBDDB0027BC55 /* MAPD724-W2022-ICE1-Keshav-DulalTests */ = {
+		2C067519279DBDDB0027BC55 /* MAPD724-W2022-ICE2-Keshav-DulalTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C067531279DBDDB0027BC55 /* Build configuration list for PBXNativeTarget "MAPD724-W2022-ICE1-Keshav-DulalTests" */;
+			buildConfigurationList = 2C067531279DBDDB0027BC55 /* Build configuration list for PBXNativeTarget "MAPD724-W2022-ICE2-Keshav-DulalTests" */;
 			buildPhases = (
 				2C067516279DBDDB0027BC55 /* Sources */,
 				2C067517279DBDDB0027BC55 /* Frameworks */,
@@ -317,14 +323,14 @@
 			dependencies = (
 				2C06751C279DBDDB0027BC55 /* PBXTargetDependency */,
 			);
-			name = "MAPD724-W2022-ICE1-Keshav-DulalTests";
+			name = "MAPD724-W2022-ICE2-Keshav-DulalTests";
 			productName = "MAPD724-W2022-ICE1-Keshav-DulalTests";
-			productReference = 2C06751A279DBDDB0027BC55 /* MAPD724-W2022-ICE1-Keshav-DulalTests.xctest */;
+			productReference = 2C06751A279DBDDB0027BC55 /* MAPD724-W2022-ICE2-Keshav-DulalTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2C067523279DBDDB0027BC55 /* MAPD724-W2022-ICE1-Keshav-DulalUITests */ = {
+		2C067523279DBDDB0027BC55 /* MAPD724-W2022-ICE2-Keshav-DulalUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C067534279DBDDB0027BC55 /* Build configuration list for PBXNativeTarget "MAPD724-W2022-ICE1-Keshav-DulalUITests" */;
+			buildConfigurationList = 2C067534279DBDDB0027BC55 /* Build configuration list for PBXNativeTarget "MAPD724-W2022-ICE2-Keshav-DulalUITests" */;
 			buildPhases = (
 				2C067520279DBDDB0027BC55 /* Sources */,
 				2C067521279DBDDB0027BC55 /* Frameworks */,
@@ -335,9 +341,9 @@
 			dependencies = (
 				2C067526279DBDDB0027BC55 /* PBXTargetDependency */,
 			);
-			name = "MAPD724-W2022-ICE1-Keshav-DulalUITests";
+			name = "MAPD724-W2022-ICE2-Keshav-DulalUITests";
 			productName = "MAPD724-W2022-ICE1-Keshav-DulalUITests";
-			productReference = 2C067524279DBDDB0027BC55 /* MAPD724-W2022-ICE1-Keshav-DulalUITests.xctest */;
+			productReference = 2C067524279DBDDB0027BC55 /* MAPD724-W2022-ICE2-Keshav-DulalUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -363,7 +369,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2C0674FC279DBDD80027BC55 /* Build configuration list for PBXProject "MAPD724-W2022-ICE1-Keshav-Dulal" */;
+			buildConfigurationList = 2C0674FC279DBDD80027BC55 /* Build configuration list for PBXProject "MAPD724-W2022-ICE2-Keshav-Dulal" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -376,9 +382,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2C067500279DBDD90027BC55 /* MAPD724-W2022-ICE1-Keshav-Dulal */,
-				2C067519279DBDDB0027BC55 /* MAPD724-W2022-ICE1-Keshav-DulalTests */,
-				2C067523279DBDDB0027BC55 /* MAPD724-W2022-ICE1-Keshav-DulalUITests */,
+				2C067500279DBDD90027BC55 /* MAPD724-W2022-ICE2-Keshav-Dulal */,
+				2C067519279DBDDB0027BC55 /* MAPD724-W2022-ICE2-Keshav-DulalTests */,
+				2C067523279DBDDB0027BC55 /* MAPD724-W2022-ICE2-Keshav-DulalUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -418,7 +424,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C9F9745279E614E007F0A5A /* Ocean.swift in Sources */,
+				2C3A5B5D27AE8ECF00E1FC4B /* Cloud.swift in Sources */,
 				2C067539279DBE720027BC55 /* GameObject.swift in Sources */,
+				2C3A5B5B27AE873E00E1FC4B /* Island.swift in Sources */,
 				2C06753B279DBED10027BC55 /* GameProtocol.swift in Sources */,
 				2C06750B279DBDD90027BC55 /* GameScene.swift in Sources */,
 				2C06750D279DBDD90027BC55 /* GameViewController.swift in Sources */,
@@ -446,12 +454,12 @@
 /* Begin PBXTargetDependency section */
 		2C06751C279DBDDB0027BC55 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2C067500279DBDD90027BC55 /* MAPD724-W2022-ICE1-Keshav-Dulal */;
+			target = 2C067500279DBDD90027BC55 /* MAPD724-W2022-ICE2-Keshav-Dulal */;
 			targetProxy = 2C06751B279DBDDB0027BC55 /* PBXContainerItemProxy */;
 		};
 		2C067526279DBDDB0027BC55 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2C067500279DBDD90027BC55 /* MAPD724-W2022-ICE1-Keshav-Dulal */;
+			target = 2C067500279DBDD90027BC55 /* MAPD724-W2022-ICE2-Keshav-Dulal */;
 			targetProxy = 2C067525279DBDDB0027BC55 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -611,8 +619,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "keshavdulal.MAPD724-W2022-ICE1-Keshav-Dulal";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "keshavdulal.MAPD724-W2022-ICE2-Keshav-Dulal";
+				PRODUCT_NAME = "MAPD724-W2022-ICE2-Keshav-Dulal";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -638,8 +646,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "keshavdulal.MAPD724-W2022-ICE1-Keshav-Dulal";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "keshavdulal.MAPD724-W2022-ICE2-Keshav-Dulal";
+				PRODUCT_NAME = "MAPD724-W2022-ICE2-Keshav-Dulal";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -666,7 +674,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MAPD724-W2022-ICE1-Keshav-Dulal.app/MAPD724-W2022-ICE1-Keshav-Dulal";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MAPD724-W2022-ICE2-Keshav-Dulal.app/MAPD724-W2022-ICE2-Keshav-Dulal";
 			};
 			name = Debug;
 		};
@@ -690,7 +698,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MAPD724-W2022-ICE1-Keshav-Dulal.app/MAPD724-W2022-ICE1-Keshav-Dulal";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MAPD724-W2022-ICE2-Keshav-Dulal.app/MAPD724-W2022-ICE2-Keshav-Dulal";
 			};
 			name = Release;
 		};
@@ -741,7 +749,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2C0674FC279DBDD80027BC55 /* Build configuration list for PBXProject "MAPD724-W2022-ICE1-Keshav-Dulal" */ = {
+		2C0674FC279DBDD80027BC55 /* Build configuration list for PBXProject "MAPD724-W2022-ICE2-Keshav-Dulal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C06752C279DBDDB0027BC55 /* Debug */,
@@ -750,7 +758,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C06752E279DBDDB0027BC55 /* Build configuration list for PBXNativeTarget "MAPD724-W2022-ICE1-Keshav-Dulal" */ = {
+		2C06752E279DBDDB0027BC55 /* Build configuration list for PBXNativeTarget "MAPD724-W2022-ICE2-Keshav-Dulal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C06752F279DBDDB0027BC55 /* Debug */,
@@ -759,7 +767,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C067531279DBDDB0027BC55 /* Build configuration list for PBXNativeTarget "MAPD724-W2022-ICE1-Keshav-DulalTests" */ = {
+		2C067531279DBDDB0027BC55 /* Build configuration list for PBXNativeTarget "MAPD724-W2022-ICE2-Keshav-DulalTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C067532279DBDDB0027BC55 /* Debug */,
@@ -768,7 +776,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C067534279DBDDB0027BC55 /* Build configuration list for PBXNativeTarget "MAPD724-W2022-ICE1-Keshav-DulalUITests" */ = {
+		2C067534279DBDDB0027BC55 /* Build configuration list for PBXNativeTarget "MAPD724-W2022-ICE2-Keshav-DulalUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C067535279DBDDB0027BC55 /* Debug */,

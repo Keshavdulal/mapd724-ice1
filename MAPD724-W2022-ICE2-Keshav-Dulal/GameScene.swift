@@ -19,7 +19,10 @@ class GameScene: SKScene
 {
     // instance variables
     var ocean: Ocean?
+    var island: Island?
     var plane: Plane?
+//    var cloud: Cloud?
+    var clouds: [Cloud] = []
     
       
     override func didMove(to view: SKView)
@@ -32,12 +35,28 @@ class GameScene: SKScene
         // add ocean to the scene
         ocean = Ocean() // allocate memory
         ocean?.position = CGPoint(x: 0, y: 773)
-        addChild(ocean!) // add the ocean to the scene
+        addChild(ocean!)
+                
+        // add island to the scene
+        island = Island() // instantiate
+        addChild(island!)
         
         // add plane to the scene
         plane = Plane()
         plane?.position = CGPoint(x: 0, y: -495)
         addChild(plane!)
+
+        // add cloud to the scene
+//        cloud = Cloud()
+//        addChild(cloud!)
+        
+//        add 3 clouds to the scene
+        for index in 0...2
+        {
+            let cloud: Cloud = Cloud()
+            clouds.append(cloud)
+            addChild(clouds[index])
+        }
         
     }
     
@@ -79,6 +98,13 @@ class GameScene: SKScene
     override func update(_ currentTime: TimeInterval)
     {
         ocean?.Update()
+        island?.Update()
         plane?.Update()
+//        cloud?.Update()
+        
+        // update each cloud in clouds array
+        for cloud in clouds{
+            cloud.Update()
+        }
     }
 }

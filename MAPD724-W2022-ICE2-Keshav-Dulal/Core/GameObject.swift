@@ -49,6 +49,7 @@ class GameObject : SKSpriteNode, GameProtocol
     }
     
     
+    // LifeCycle Functions
     func CheckBounds(){
         
     }
