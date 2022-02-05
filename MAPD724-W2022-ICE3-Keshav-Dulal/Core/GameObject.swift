@@ -20,7 +20,7 @@ class GameObject : SKSpriteNode, GameProtocol
     var halfWidth: CGFloat?
     var halfHeight: CGFloat?
     var scale: CGFloat? // uniform scale
-    var isCollding: Bool?
+    var isColliding: Bool?
     var randomSource: GKARC4RandomSource?
     var randomDist: GKRandomDistribution? // preselected pseudo random nos
     
@@ -39,7 +39,7 @@ class GameObject : SKSpriteNode, GameProtocol
         height = texture.size().height * scale!
         halfWidth = width! * 0.5
         halfHeight = height! * 0.5
-        isCollding = false
+        isColliding = false
         name = imageString
         randomSource = GKARC4RandomSource() // random no seed
     }

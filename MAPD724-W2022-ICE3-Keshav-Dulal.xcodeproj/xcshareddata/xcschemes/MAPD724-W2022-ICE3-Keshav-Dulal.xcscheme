@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2C067500279DBDD90027BC55"
                BuildableName = "MAPD724-W2022-ICE2-Keshav-Dulal.app"
-               BlueprintName = "MAPD724-W2022-ICE2-Keshav-Dulal"
-               ReferencedContainer = "container:MAPD724-W2022-ICE2-Keshav-Dulal.xcodeproj">
+               BlueprintName = "MAPD724-W2022-ICE3-Keshav-Dulal"
+               ReferencedContainer = "container:MAPD724-W2022-ICE3-Keshav-Dulal.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2C067519279DBDDB0027BC55"
-               BuildableName = "MAPD724-W2022-ICE1-Keshav-DulalTests.xctest"
-               BlueprintName = "MAPD724-W2022-ICE2-Keshav-DulalTests"
-               ReferencedContainer = "container:MAPD724-W2022-ICE2-Keshav-Dulal.xcodeproj">
+               BuildableName = "MAPD724-W2022-ICE2-Keshav-DulalTests.xctest"
+               BlueprintName = "MAPD724-W2022-ICE3-Keshav-DulalTests"
+               ReferencedContainer = "container:MAPD724-W2022-ICE3-Keshav-Dulal.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2C067523279DBDDB0027BC55"
-               BuildableName = "MAPD724-W2022-ICE1-Keshav-DulalUITests.xctest"
-               BlueprintName = "MAPD724-W2022-ICE2-Keshav-DulalUITests"
-               ReferencedContainer = "container:MAPD724-W2022-ICE2-Keshav-Dulal.xcodeproj">
+               BuildableName = "MAPD724-W2022-ICE2-Keshav-DulalUITests.xctest"
+               BlueprintName = "MAPD724-W2022-ICE3-Keshav-DulalUITests"
+               ReferencedContainer = "container:MAPD724-W2022-ICE3-Keshav-Dulal.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -66,8 +66,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2C067500279DBDD90027BC55"
             BuildableName = "MAPD724-W2022-ICE2-Keshav-Dulal.app"
-            BlueprintName = "MAPD724-W2022-ICE2-Keshav-Dulal"
-            ReferencedContainer = "container:MAPD724-W2022-ICE2-Keshav-Dulal.xcodeproj">
+            BlueprintName = "MAPD724-W2022-ICE3-Keshav-Dulal"
+            ReferencedContainer = "container:MAPD724-W2022-ICE3-Keshav-Dulal.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -83,8 +83,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2C067500279DBDD90027BC55"
             BuildableName = "MAPD724-W2022-ICE2-Keshav-Dulal.app"
-            BlueprintName = "MAPD724-W2022-ICE2-Keshav-Dulal"
-            ReferencedContainer = "container:MAPD724-W2022-ICE2-Keshav-Dulal.xcodeproj">
+            BlueprintName = "MAPD724-W2022-ICE3-Keshav-Dulal"
+            ReferencedContainer = "container:MAPD724-W2022-ICE3-Keshav-Dulal.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

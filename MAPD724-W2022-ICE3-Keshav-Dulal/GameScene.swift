@@ -58,6 +58,8 @@ class GameScene: SKScene
             addChild(clouds[index])
         }
         
+        
+               
     }
     
     
@@ -105,6 +107,12 @@ class GameScene: SKScene
         // update each cloud in clouds array
         for cloud in clouds{
             cloud.Update()
+            
+            CollisionManager.SquaredRadiusCheck(scene: self, object1: plane!, object2: cloud)
+            // here cloud isn't unwrapped because clouds array is unwrapped above
         }
+        
+    // call CollisionManager
+        CollisionManager.SquaredRadiusCheck(scene: self, object1: plane!, object2: island!)
     }
 }
