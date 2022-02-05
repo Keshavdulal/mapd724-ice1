@@ -59,7 +59,30 @@ class GameScene: SKScene
         }
         
         
-               
+        // sounds
+        // use mp3s
+        let engineSound = SKAudioNode(fileNamed: "engine.mp3")
+        self.addChild(engineSound)
+        engineSound.autoplayLooped = true // infinte loop
+        
+        
+        // preload / prewarm impulse sounds
+        do{
+            let sounds:[String] = ["thunder", "yay"]
+            
+            for sound in sounds{
+                let path: String = Bundle.main.path(forResource: sound, ofType: "mp3")!
+                let url: URL = URL(fileURLWithPath: path)
+                let player: AVAudioPlayer = try AVAudioPlayer(contentsOf: url)
+                player.prepareToPlay()
+                
+                
+            }
+        }
+        catch{
+            
+        }
+        
     }
     
     
