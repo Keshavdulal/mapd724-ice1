@@ -15,8 +15,10 @@ let screenSize = UIScreen.main.bounds
 var screenWidth: CGFloat? // adapt game to diff screen sizes
 var screenHeight: CGFloat? // adapt game to diff screen sizes
 
-class GameScene: SKScene
-{
+class GameScene: SKScene{
+    
+    var gameManager: GameManager?
+    
     // instance variables
     var ocean: Ocean?
     var island: Island?
