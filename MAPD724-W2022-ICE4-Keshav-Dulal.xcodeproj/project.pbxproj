@@ -239,6 +239,8 @@
 		2C9F96C8279E59B3007F0A5A /* images */ = {
 			isa = PBXGroup;
 			children = (
+				2C9F96D6279E59B3007F0A5A /* restartButton.png */,
+				2C9F96EF279E59B3007F0A5A /* startButton.png */,
 				2C9F96C9279E59B3007F0A5A /* bullet.png */,
 				2C9F96CA279E59B3007F0A5A /* plane3.png */,
 				2C9F96CB279E59B3007F0A5A /* plane2.png */,
@@ -252,7 +254,6 @@
 				2C9F96D3279E59B3007F0A5A /* ocean.gif */,
 				2C9F96D4279E59B3007F0A5A /* coin08.png */,
 				2C9F96D5279E59B3007F0A5A /* coin09.png */,
-				2C9F96D6279E59B3007F0A5A /* restartButton.png */,
 				2C9F96D7279E59B3007F0A5A /* coin10.png */,
 				2C9F96D8279E59B3007F0A5A /* coin04.png */,
 				2C9F96D9279E59B3007F0A5A /* smallexplosion4.png */,
@@ -277,7 +278,6 @@
 				2C9F96EC279E59B3007F0A5A /* ocean.png */,
 				2C9F96ED279E59B3007F0A5A /* explosion3.png */,
 				2C9F96EE279E59B3007F0A5A /* explosion7.png */,
-				2C9F96EF279E59B3007F0A5A /* startButton.png */,
 				2C9F96F0279E59B3007F0A5A /* explosion6.png */,
 				2C9F96F1279E59B3007F0A5A /* explosion4.png */,
 				2C9F96F2279E59B3007F0A5A /* explosion5.png */,

@@ -10,9 +10,14 @@ import SpriteKit
 import GameplayKit
 
 class GameViewController: UIViewController, GameManager {
-
+    
+    // Buttons
+    @IBOutlet weak var StartButtonOutlet: UIButton!
+    
+    // Labels
     @IBOutlet weak var ScoreLabel: UILabel!
     @IBOutlet weak var LivesLabel: UILabel!
+    @IBOutlet weak var AppTitle: UILabel!
     
     var currentScene: SKScene?
     
@@ -25,14 +30,8 @@ class GameViewController: UIViewController, GameManager {
         
         ScoreLabel.isHidden = true
         LivesLabel.isHidden = true
-        CollisionManager.gameViewController = self // make reference to CollisionManager
-         setScene(sceneName: "GameScene")
-
-        // initialize the lives and score
-//        ScoreManager.Score = 0
-//        ScoreManager.Lives = 5
-//        updateLivesLabel()
-//        updateScoreLabel()
+        CollisionManager.gameViewController = self // make   reference to CollisionManager
+         setScene(sceneName: "StartScene")
         
     }
 
@@ -85,6 +84,8 @@ class GameViewController: UIViewController, GameManager {
     }
     
     func PresentStartScene(){
+        AppTitle.isHidden = false
+        StartButtonOutlet.isHidden = false
         ScoreLabel.isHidden = true
         LivesLabel.isHidden = true
     }
@@ -93,6 +94,23 @@ class GameViewController: UIViewController, GameManager {
         ScoreLabel.isHidden = true
         LivesLabel.isHidden = true
         setScene(sceneName: "EndScene")
+    }
+    
+    // START
+    @IBAction func StartButton_Pressed(_ sender: UIButton) {
+        AppTitle.isHidden = true // hide
+        StartButtonOutlet.isHidden = true // hide
+        ScoreLabel.isHidden = false // show
+        LivesLabel.isHidden = false // show
+        
+        // initialize the lives and score
+        ScoreManager.Score = 0
+        ScoreManager.Lives = 5
+        updateLivesLabel()
+        updateScoreLabel()
+        
+        // Move to Game Scene where user plays/interact with app
+        setScene(sceneName: "GameScene")
     }
 }
 
