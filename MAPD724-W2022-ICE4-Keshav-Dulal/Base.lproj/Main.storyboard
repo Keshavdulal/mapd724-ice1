@@ -31,7 +31,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgv-ke-gZ0">
                                 <rect key="frame" x="21" y="116" width="115" height="32"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="Hng-xo-iHS"/>
+                                    <constraint firstAttribute="height" constant="32" id="M6U-w3-IZ8"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="Lives: 5">
@@ -64,25 +64,53 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VsP-Ot-imt">
+                                <rect key="frame" x="95" y="728" width="224" height="74"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="restartButton" title=""/>
+                                <connections>
+                                    <action selector="ReStartButton_Pressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Lmu-Nw-2dd"/>
+                                    <action selector="StartButton_Pressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="P7O-An-gwt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VgV-fA-gKX">
+                                <rect key="frame" x="42" y="526" width="331" height="61"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="GAME OVER">
+                                        <attributes>
+                                            <color key="NSColor" red="0.85591590399999995" green="0.0" blue="0.063974093450000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="58" name="Dock51"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="26h-xK-da9" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" id="4k4-YQ-pBa"/>
-                            <constraint firstItem="hgv-ke-gZ0" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="21" id="DKG-wt-CMA"/>
-                            <constraint firstItem="RoT-xV-mR9" firstAttribute="top" secondItem="3se-qz-xqx" secondAttribute="top" constant="411" id="H6U-LL-hD3"/>
-                            <constraint firstItem="RoT-xV-mR9" firstAttribute="centerX" secondItem="CPz-F2-Of1" secondAttribute="centerX" id="NGZ-cb-izz"/>
-                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="26h-xK-da9" secondAttribute="trailing" symbolic="YES" id="OYE-25-c5P"/>
-                            <constraint firstItem="RoT-xV-mR9" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="Rht-22-uBA"/>
-                            <constraint firstItem="26h-xK-da9" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" constant="34" id="Ve8-ZV-LZN"/>
-                            <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="CPz-F2-Of1" secondAttribute="bottom" constant="136" id="YOe-wh-7bd"/>
-                            <constraint firstItem="hgv-ke-gZ0" firstAttribute="top" secondItem="26h-xK-da9" secondAttribute="bottom" constant="10.5" id="m3c-4K-D22"/>
-                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="hgv-ke-gZ0" secondAttribute="trailing" constant="278" id="yjS-cl-MXP"/>
+                            <constraint firstItem="CPz-F2-Of1" firstAttribute="leading" secondItem="VsP-Ot-imt" secondAttribute="leading" id="2od-ai-Zv6"/>
+                            <constraint firstItem="26h-xK-da9" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" id="CUT-xH-ZoH"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="trailing" secondItem="hgv-ke-gZ0" secondAttribute="trailing" constant="278" id="Cu6-kT-0ny"/>
+                            <constraint firstItem="VgV-fA-gKX" firstAttribute="centerX" secondItem="CPz-F2-Of1" secondAttribute="centerX" id="Q5P-sa-0Cm"/>
+                            <constraint firstItem="hgv-ke-gZ0" firstAttribute="top" secondItem="26h-xK-da9" secondAttribute="bottom" constant="10.5" id="RXC-2R-8Er"/>
+                            <constraint firstItem="RoT-xV-mR9" firstAttribute="centerX" secondItem="VgV-fA-gKX" secondAttribute="centerX" id="SQv-yG-cgM"/>
+                            <constraint firstItem="CPz-F2-Of1" firstAttribute="top" secondItem="VgV-fA-gKX" secondAttribute="bottom" constant="65" id="TVp-PM-zom"/>
+                            <constraint firstItem="RoT-xV-mR9" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="XKu-1h-fqJ"/>
+                            <constraint firstItem="4qk-I5-YsI" firstAttribute="bottom" secondItem="VsP-Ot-imt" secondAttribute="bottom" constant="60" id="ZP2-F5-dTp"/>
+                            <constraint firstItem="VgV-fA-gKX" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="42" id="bnX-7A-5r7"/>
+                            <constraint firstItem="VgV-fA-gKX" firstAttribute="top" secondItem="RoT-xV-mR9" secondAttribute="bottom" constant="54" id="eal-Bn-NOA"/>
+                            <constraint firstItem="hgv-ke-gZ0" firstAttribute="leading" secondItem="4qk-I5-YsI" secondAttribute="leading" constant="21" id="kpz-aM-C8M"/>
+                            <constraint firstItem="VsP-Ot-imt" firstAttribute="top" secondItem="CPz-F2-Of1" secondAttribute="bottom" constant="2" id="rFv-ZV-kTQ"/>
+                            <constraint firstItem="26h-xK-da9" firstAttribute="top" secondItem="4qk-I5-YsI" secondAttribute="top" constant="34" id="skV-8F-YVh"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="AppTitle" destination="RoT-xV-mR9" id="raX-Lq-9MT"/>
+                        <outlet property="EndLabel" destination="VgV-fA-gKX" id="f8n-JY-0xg"/>
                         <outlet property="LivesLabel" destination="hgv-ke-gZ0" id="M48-DB-OdB"/>
+                        <outlet property="ReStartButtonOutlet" destination="VsP-Ot-imt" id="NAQ-MK-osF"/>
                         <outlet property="ScoreLabel" destination="26h-xK-da9" id="VzR-1I-iY4"/>
                         <outlet property="StartButtonOutlet" destination="CPz-F2-Of1" id="wkO-pV-u3T"/>
                     </connections>
@@ -93,6 +121,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="restartButton" width="200" height="60"/>
         <image name="startButton" width="200" height="60"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -9,15 +9,19 @@ import UIKit
 import SpriteKit
 import GameplayKit
 
+// Game UI Controller
 class GameViewController: UIViewController, GameManager {
     
     // Buttons
     @IBOutlet weak var StartButtonOutlet: UIButton!
+    @IBOutlet weak var ReStartButtonOutlet: UIButton!
     
     // Labels
     @IBOutlet weak var ScoreLabel: UILabel!
     @IBOutlet weak var LivesLabel: UILabel!
     @IBOutlet weak var AppTitle: UILabel!
+    @IBOutlet weak var EndLabel: UILabel!
+    
     
     var currentScene: SKScene?
     
@@ -25,13 +29,15 @@ class GameViewController: UIViewController, GameManager {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // setScene(sceneName: currentScene)
-        
-        
+        // keep these things hidden at start
         ScoreLabel.isHidden = true
         LivesLabel.isHidden = true
-        CollisionManager.gameViewController = self // make   reference to CollisionManager
-         setScene(sceneName: "StartScene")
+        EndLabel.isHidden = true
+        ReStartButtonOutlet.isHidden = true
+        
+        // make   reference to CollisionManager
+        CollisionManager.gameViewController = self
+        setScene(sceneName: "StartScene")
         
     }
 
@@ -84,13 +90,24 @@ class GameViewController: UIViewController, GameManager {
     }
     
     func PresentStartScene(){
+        // show
         AppTitle.isHidden = false
         StartButtonOutlet.isHidden = false
+        
+        // hide
+        ReStartButtonOutlet.isHidden = true
+        EndLabel.isHidden = true
         ScoreLabel.isHidden = true
         LivesLabel.isHidden = true
     }
 
     func PresentEndScene(){
+        // show
+        AppTitle.isHidden = false
+        EndLabel.isHidden = false
+        ReStartButtonOutlet.isHidden = false
+        
+        // hide
         ScoreLabel.isHidden = true
         LivesLabel.isHidden = true
         setScene(sceneName: "EndScene")
@@ -98,10 +115,38 @@ class GameViewController: UIViewController, GameManager {
     
     // START
     @IBAction func StartButton_Pressed(_ sender: UIButton) {
-        AppTitle.isHidden = true // hide
-        StartButtonOutlet.isHidden = true // hide
-        ScoreLabel.isHidden = false // show
-        LivesLabel.isHidden = false // show
+        // show
+        ScoreLabel.isHidden = false
+        LivesLabel.isHidden = false
+        
+        // hide
+        AppTitle.isHidden = true
+        EndLabel.isHidden = true
+        StartButtonOutlet.isHidden = true
+        
+        
+        // initialize the lives and score
+        ScoreManager.Score = 0
+        ScoreManager.Lives = 5
+        updateLivesLabel()
+        updateScoreLabel()
+        
+        // Move to Game Scene where user plays/interact with app
+        setScene(sceneName: "GameScene")
+    }
+   
+    @IBAction func ReStartButton_Pressed(_ sender: UIButton) {
+//        // show
+//        AppTitle.isHidden = false
+//        EndLabel.isHidden = false
+//        StartButtonOutlet.isHidden = false
+//        ReStartButtonOutlet.isHidden = false
+//
+//        // hide
+//        ScoreLabel.isHidden = true
+//        LivesLabel.isHidden = true
+        ReStartButtonOutlet.isHidden = true
+        
         
         // initialize the lives and score
         ScoreManager.Score = 0
